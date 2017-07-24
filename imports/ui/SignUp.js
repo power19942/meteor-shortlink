@@ -27,7 +27,7 @@ export default class SignUp extends React.Component{
             <div>
                 <h1>Join Short Link</h1>
                 {this.state.error ? <p>{this.state.error}</p> : undefined}
-                <form onSubmit={this.onSubmit.bind(this)}>
+                <form onSubmit={this.onSubmit.bind(this)} noValidate>
                     <input ref='email' type="email" name="email" placeholder="Email"/>
                     <input ref='password' type="password" name="password" placeholder="Password"/>
                     <button>Create Account</button>
